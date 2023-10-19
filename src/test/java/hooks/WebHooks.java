@@ -32,6 +32,6 @@ public class WebHooks {
         String listenerName = "AllureSelenide";
         if (!(SelenideLogger.hasListener(listenerName)))
             SelenideLogger.addListener(listenerName,
-                    (new AllureSelenide().screenshots(true).savePageSource(false)));
+                    (new AllureSelenide().screenshots(true).savePageSource(true)));
     }
 }
